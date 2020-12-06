@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Tokyo Walking Foodie Tours (BLOG TITLE)</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="slick-1.6.0/slick/slick.css" rel="stylesheet">
+    <link href="slick-1.6.0/slick/slick-theme.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/twf.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- QuickMessage™ Modal -->
+<div class="modal fade" id="quick_message_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog quick_message_smaller_dialog" role="document">
+        <div class="modal-content flat_green_content">
+            <div class="modal-header">
+                <button id="qm_modal_close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="quick_message_form" role="form" class="qm_form">
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="First Name" onfocus="placeholder='' " onblur="placeholder='First Name' ">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="Last Name" onfocus="placeholder='' " onblur="placeholder='Last Name' ">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="Your E-mail" onfocus="placeholder='' " onblur="placeholder='Your E-mail' ">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="Country" onfocus="placeholder='' " onblur="placeholder='Country' ">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control qm_form_txt_area" rows="8" placeholder="Message" onfocus="placeholder='' " onblur="placeholder='Message' "></textarea>
+                    </div>
+                    <button type="submit" id="send_quick_message" class="btn quick_message_btn center-block hvr-ripple-out ">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <nav class="navbar uppermost_nav">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-right uppermost_micronavbar">
+                <li><a class="anchor" href="index.html">Home</a></li>
+                <li><a class="anchor" href="faq.html">FAQ</a></li>
+                <li><a class="anchor" href="about.html">About Us</a></li>
+                <li><a class="anchor" href="blog.html">Blog</a></li>
+                <li><a class="anchor" data-toggle="modal" data-target="#quick_message_modal" href="javascript:void(0);">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <nav class="navbar main_hero_nav">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#twf_collapsable_01" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand twf_brand animated bounceInLeft" href="index.html"><img src="img/logo_main.png" class="twf_logo" alt="TWF Logo"> </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse lamp_navcollapse" id="twf_collapsable_01">
+                    <ul class="nav navbar-nav twf_main_nav navbar-right">
+                        <li><a class="anchor trans_cta_btn hvr-shadow" href="ourtours.html"><span class="main_nav_icon compass"></span>Our Tours</a></li>
+                        <li><a class="anchor trans_cta_btn hvr-shadow" href="#"><span class="main_nav_icon calendar"></span>Calendar</a></li>
+                        <li><a class="anchor trans_cta_btn hvr-shadow" href="testimonials.html"><span class="main_nav_icon testimonialz"></span>Testimonials</a></li>
+                        <div class="clearfix visible-sm hidden-xs"></div>
+                        <li><a class="anchor booknow_cta_btn" href="#">Book now!</a></li>
+                        <li><a class="anchor jpn_location_btn hvr-pulse" href="#"><span class="jpn_location"></span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <div class="dedicatedblog_midmain_area">
+        <div class="container">
+            <div class="row">
+                <div class="dedicatedblogz_holder">
+                    <div class="blog_holder">
+                        <h1 class="blog_ttl">Where to have the freshest fish after 2AM?</h1>
+                        <section class="blog_props_transparent_stripe">
+                            <section class="blog_user_holder">
+                                <i class="blog_props_icon fa fa-user-circle-o"></i>
+                                <small class="blog_props_info">Admin</small>
+                            </section>
+                            <section class="blog_date_holder">
+                                <i class="blog_props_icon fa fa-calendar-check-o"></i>
+                                <small class="blog_props_info">November 12, 2016</small>
+                            </section>
+                            <section class="blog_date_holder">
+                                <i class="blog_props_icon fa fa-server"></i>
+                                <small class="blog_props_info">Food & Travel</small>
+                            </section>
+                        </section>
+                        <div class="blogpic" style="background: url('img/blog3.jpg') center center no-repeat; background-size: cover;">
+                            <div class="blog_bgd_pattern"></div>
+                        </div>
+                        <p class="blog_info">
+                            A fish market is a marketplace used for marketing fish products. It can be dedicated to wholesale
+                            trade between fishermen and fish merchants, or to the sale of seafood to individual consumers,
+                            or to both. Retail fish markets, a type of wet market, often sell street food as well.
+                            Fish markets range in size from small fish stalls, such as the one in the photo at the right, to the great
+                            Tsukiji fish market in Tokyo, turning over about 660,000 tonnes a year.
+                        </p>
+                        <p class="blog_info">
+                            They served as a public space where large numbers of people could gather and discuss current
+                            events and local politics. Because seafood is quick to spoil, fish markets are historically
+                            most often found in seaside towns. Once ice or other simple cooling methods became available,
+                            some were also established in large inland cities that had good trade routes to the coast.
+                            Since refrigeration and rapid transport became available in the 19th and 20th century, fish
+                            markets can technically be established at any place. However, because modern trade logistics
+                            in general has shifted away from marketplaces and towards retail outlets, such as supermarkets,
+                            most seafood worldwide is now sold to consumers through these venues, like most other foodstuffs.
+                            Consequently, most major fish markets now mainly deal with wholesale trade, and the existing
+                            major fish retail markets continue to operate as much for traditional reasons as for commercial
+                            ones. Both types of fish markets are often tourist attractions as well.
+                        </p>
+                        <p class="blog_info">
+                            The market is located in Tsukiji in central Tokyo, between the Sumida River and the upmarket
+                            Ginza shopping district. While the inner wholesale market has restricted access to visitors,
+                            the outer retail market, restaurants and associated restaurant supply stores remain a major
+                            tourist attraction for both domestic and overseas visitors.
+                            The market is located near the Tsukijishijō Station on the Toei Ōedo Line and Tsukiji Station
+                            on the Tokyo Metro Hibiya Line. There are two distinct sections of the market as a whole.
+                            The "inner market" (jōnai-shijō) is the licensed wholesale market, where approximately 900
+                            licensed wholesale dealers operate small stalls and where the auctions and most of the
+                            processing of the fish take place. The "outer market" (jōgai-shijō) is a mixture of wholesale
+                            and retail shops that sell Japanese kitchen tools, restaurant supplies, groceries, and seafood,
+                            and many restaurants, especially sushi restaurants. Most of the shops in the outer market close
+                            by the early afternoon, and in the inner market even earlier.
+                        </p>
+                        <p class="blog_info">
+                            The auctions start around 5:20 a.m. Bidding can only be done by licensed participants. These
+                            bidders include intermediate wholesalers (nakaoroshi gyōsha) who operate stalls in the marketplace
+                            and other licensed buyers who are agents for restaurants, food processing companies, and
+                            large retailers.
+                            The auctions usually end around 10:00 a.m. Afterward, the purchased fish is either loaded
+                            onto trucks to be shipped to the next destination or on small carts and moved to the many
+                            shops inside the market. There the shop owners cut and prepare the products for retail. In
+                            case of large fish, for example tuna and swordfish, cutting and preparation is elaborate.
+                            Frozen tuna and swordfish are often cut with large band saws, and fresh tuna is carved with
+                            extremely long knives.
+                        </p>
+                        <a href="#" class="read_mo_blog">Back To Blog</a>
+                    </div> <!-- Blog END -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="invisible">
+
+    <div class="tokyoscape_area">
+        <div class="container">
+            <div class="row">
+                <img src="img/Tokyoscape.png" class="center-block tokyoscape_itself">
+            </div>
+        </div>
+    </div> <!-- Tokyoscape END -->
+
+    <footer class="twf_footer">
+        <div class="container">
+            <div class="row">
+                <section class="col-sm-2 first_linx_column">
+                    <ul class="footer_linxx">
+                        <li><i class="fa fa-circle"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa fa-circle"></i><a href="about.html">About us</a></li>
+                        <li><i class="fa fa-circle"></i><a href="faq.html">FAQ</a></li>
+                        <li><i class="fa fa-circle"></i><a href="blog.html">Blog</a></li>
+                        <li><i class="fa fa-circle"></i><a href="ourtours.html">Tours</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Book a tour</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-3 second_linx_column">
+                    <ul class="footer_linxx">
+                        <li><i class="fa fa-circle"></i><a href="#">Find restaurant</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Apply for free guide book</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Calendar</a></li>
+                        <li><i class="fa fa-circle"></i><a href="testimonials.html">Testimonials</a></li>
+                        <li><i class="fa fa-circle"></i><a href="privacy.html">Privacy Policy</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Learn more about Japan</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-7 col-xs-5  address_column">
+                    <h5 class="footer_ttl">Contact us:</h5>
+                    <p class="contact_dtlz">+81-90-85886635</p>
+                    <p class="contact_dtlz"><u>info@tokyowalkingfoodietours.com</u></p>
+                    <hr class="invisible invisible_separ">
+                    <h5 class="footer_ttl">Address:</h5>
+                    <p class="contact_dtlz">203-2-18-6 Ebisuminami,</p>
+                    <p class="contact_dtlz">Shibuya, Tokyo 150-0022 JAPAN</p>
+                </section>
+                <div class="clearfix"></div>
+                <div class="col-sm-6 col-xs-6 fotter_postnotes">
+                    <small>&copy; 2017 All Rights Reserved, Tokyo Walking Foodie Tours</small>
+                </div>
+                <div class="col-sm-6 col-xs-6 fotter_postnotes_II">
+                    <h5 class="footer_ttl_II">Community:</h5>
+                    <ul class="footer_socialz">
+                        <li><a href="#"><i class="fa fa-facebook-f"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery'z -->
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="slick-1.6.0/slick/slick.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script type="text/javascript">
+
+        $('#adult_count, #kids_count').select2({
+            width: '100%',
+            minimumResultsForSearch: -1
+        });
+
+    </script>
+    <script src="js/twf.js"></script>
+
+</div> <!-- Main END -->
+</body>
+</html>

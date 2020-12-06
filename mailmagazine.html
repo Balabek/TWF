@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Tokyo Walking Foodie Tours (MAIL MAGAZINE)</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="slick-1.6.0/slick/slick.css" rel="stylesheet">
+    <link href="slick-1.6.0/slick/slick-theme.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/twf.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- QuickMessage™ Modal -->
+<div class="modal fade" id="quick_message_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog quick_message_smaller_dialog" role="document">
+        <div class="modal-content flat_green_content">
+            <div class="modal-header">
+                <button id="qm_modal_close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="quick_message_form" role="form" class="qm_form">
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="First Name" onfocus="placeholder='' " onblur="placeholder='First Name' ">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="Last Name" onfocus="placeholder='' " onblur="placeholder='Last Name' ">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="Your E-mail" onfocus="placeholder='' " onblur="placeholder='Your E-mail' ">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="Country" onfocus="placeholder='' " onblur="placeholder='Country' ">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control qm_form_txt_area" rows="8" placeholder="Message" onfocus="placeholder='' " onblur="placeholder='Message' "></textarea>
+                    </div>
+                    <button type="submit" id="send_quick_message" class="btn quick_message_btn center-block hvr-ripple-out ">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <nav class="navbar uppermost_nav">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-right uppermost_micronavbar">
+                <li><a class="anchor" href="index.html">Home</a></li>
+                <li><a class="anchor" href="faq.html">FAQ</a></li>
+                <li><a class="anchor" href="about.html">About Us</a></li>
+                <li><a class="anchor" href="blog.html">Blog</a></li>
+                <li><a class="anchor" data-target="#quick_message_modal" href="javascript:void(0);">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <nav class="navbar main_hero_nav">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#twf_collapsable_01" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand twf_brand animated bounceInLeft" href="index.html"><img src="img/logo_main.png" class="twf_logo" alt="TWF Logo"> </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse lamp_navcollapse" id="twf_collapsable_01">
+                    <ul class="nav navbar-nav twf_main_nav navbar-right">
+                        <li><a class="anchor trans_cta_btn hvr-shadow" href="ourtours.html"><span class="main_nav_icon compass"></span>Our Tours</a></li>
+                        <li><a class="anchor trans_cta_btn hvr-shadow" href="#"><span class="main_nav_icon calendar"></span>Calendar</a></li>
+                        <li><a class="anchor trans_cta_btn hvr-shadow" href="testimonials.html"><span class="main_nav_icon testimonialz"></span>Testimonials</a></li>
+                        <div class="clearfix visible-sm hidden-xs"></div>
+                        <li><a class="anchor booknow_cta_btn" href="#">Book now!</a></li>
+                        <li><a class="anchor jpn_location_btn hvr-pulse" href="#"><span class="jpn_location"></span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <div class="mm_inner_header_stripe">
+        <div class="bg_pattern"></div>
+        <div class="container">
+            <div class="row">
+                <div class="h_banner_4_inner center-block">
+                    <h2 class="dedicated_product_header_ttl center-block">Tokyo Free Guide</h2>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Inner Header END -->
+    <hr class="mmline">
+    <div class="mm_midmain_area">
+        <h4><u>Plan your tokyo trip with a <span>free guide</span></u></h4>
+        <p class="mm_info">Salutandi temporibus est ea, te vidit explicari vis. Graecis postulant torquatos pro at. Has eu nusquam
+            periculis principes. Nec at saperet definitiones. An has possit tibique torquatos, ei eam euismod deserunt
+            conceptam, legendos adversarium et nec. Elit option suscipit eum te, id patrioque voluptatum quo, has omnes
+            dolorum comprehensam no.
+        </p>
+        <p class="mm_info">
+            Facete perfecto ut vis. Nec ut quis harum feugait. Dolorum facilisis intellegam mei ei, id agam recusabo
+            nec, accusam ancillae pro ea. Prompta euripidis reprehendunt mea cu, quo ea sint quando disputando. Eros
+            rationibus vel no, consul antiopam voluptaria vim at. Veri deserunt cu vix.
+        </p>
+        <p class="mm_info">
+            Facete virtute legendos cum ut. Sit id odio nulla mandamus, qui aperiam dissentias in. Est eu scaevola
+            maluisset neglegentur, ea stet libris lucilius sed. Ex labitur percipit eos, an vis fuisset accusamus.
+        </p>
+        <span class="tokyo_separator"></span>
+        <div class="five_options_holder col-sm-12">
+            <div class="mm_option first hvr-float">
+                <span class="number_circle first">1</span>
+                <span class="mm_icon first"></span>
+                <h3>Tokyo Guide Book</h3>
+            </div>
+            <div class="mm_option second hvr-float">
+                <span class="number_circle second">2</span>
+                <span class="mm_icon second"></span>
+                <h3>Mail Magazine News</h3>
+            </div>
+            <div class="mm_option third hvr-float">
+                <span class="number_circle third">3</span>
+                <span class="mm_icon third"></span>
+                <h3>Secret Local Tips & Restaurant Info</h3>
+            </div>
+            <div class="mm_option fourth hvr-float">
+                <span class="number_circle second">4</span>
+                <span class="mm_icon fourth"></span>
+                <h3>History & Culture of Japanese Food</h3>
+            </div>
+            <div class="mm_option fifth hvr-float">
+                <span class="number_circle first">5</span>
+                <span class="mm_icon fifth"></span>
+                <h3>Japanese Food Recipes</h3>
+            </div>
+            <section class="afternotes_holder">
+                <p class="mm_afternote_1">Please submit your name and e-mail details, so we that can send you the above resources<span>&ast;</span></p>
+                <p class="mm_afternote_2"><span>&ast;</span>Note that we do no store your personal data and you can remove it from our database anytime (see <a href="#">Privacy Policy</a>)</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="signup_form_area_mm">
+        <div class="container">
+            <div class="row">
+                <h2 class="guide_promo_ttl"><u>The Ultimate Guide For Foodies</u></h2>
+                <h3 class="guide_promo_ttl_2"><u>Get a <span>free</span> guide book for discovering real tokyo!</u></h3>
+                <h5 class="guide_promo_info"><u>In order to get secret local tips and a lot of other priceless information about Tokyo,
+                    <span>SIGN UP</span> below now!</u>
+                </h5>
+                <div class="col-sm-6 guide_book_holder">
+                    <div class="col-sm-12 guide_book_itself"></div>
+                </div>
+                <div class="col-sm-6 signup_form_holder">
+                    <img src="img/crooked_arrow_up.png" class="crooked_arrow_upper">
+                    <form id="signupForm" class="signup_form" role="form">
+                        <div class="form-group">
+                            <label for="signupFirstName"></label>
+                            <input type="text" class="form-control signup_input" id="signupFirstName" placeholder="First Name" onfocus="placeholder='' " onblur="placeholder='First Name' ">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupLastName"></label>
+                            <input type="text" class="form-control signup_input" id="signupLastName" placeholder="Last Name" onfocus="placeholder='' " onblur="placeholder='Last Name' ">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupEmail"></label>
+                            <input type="text" class="form-control signup_input" id="signupEmail" placeholder="E-mail Address" onfocus="placeholder='' " onblur="placeholder='E-mail Address' ">
+                        </div>
+                        <div class="form-group center-block">
+                            <button type="submit" class="btn center-block signup_sbmy_btn">Sign Up</button>
+                        </div>
+                    </form>
+                    <img src="img/crooked_arrow_down.png" class="crooked_arrow_lower">
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- Signup Form Area END -->
+
+    <div class="tokyoscape_area">
+        <div class="container">
+            <div class="row">
+                <img src="img/Tokyoscape.png" class="center-block tokyoscape_itself">
+            </div>
+        </div>
+    </div> <!-- Tokyoscape END -->
+
+    <footer class="twf_footer">
+        <div class="container">
+            <div class="row">
+                <section class="col-sm-2 first_linx_column">
+                    <ul class="footer_linxx">
+                        <li><i class="fa fa-circle"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa fa-circle"></i><a href="about.html">About us</a></li>
+                        <li><i class="fa fa-circle"></i><a href="faq.html">FAQ</a></li>
+                        <li><i class="fa fa-circle"></i><a href="blog.html">Blog</a></li>
+                        <li><i class="fa fa-circle"></i><a href="ourtours.html">Tours</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Book a tour</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-3 second_linx_column">
+                    <ul class="footer_linxx">
+                        <li><i class="fa fa-circle"></i><a href="#">Find restaurant</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Apply for free guide book</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Calendar</a></li>
+                        <li><i class="fa fa-circle"></i><a href="testimonials.html">Testimonials</a></li>
+                        <li><i class="fa fa-circle"></i><a href="privacy.html">Privacy Policy</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Learn more about Japan</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-7 col-xs-5  address_column">
+                    <h5 class="footer_ttl">Contact us:</h5>
+                    <p class="contact_dtlz">+81-90-85886635</p>
+                    <p class="contact_dtlz"><u>info@tokyowalkingfoodietours.com</u></p>
+                    <hr class="invisible invisible_separ">
+                    <h5 class="footer_ttl">Address:</h5>
+                    <p class="contact_dtlz">203-2-18-6 Ebisuminami,</p>
+                    <p class="contact_dtlz">Shibuya, Tokyo 150-0022 JAPAN</p>
+                </section>
+                <div class="clearfix"></div>
+                <div class="col-sm-6 col-xs-6 fotter_postnotes">
+                    <small>&copy; 2017 All Rights Reserved, Tokyo Walking Foodie Tours</small>
+                </div>
+                <div class="col-sm-6 col-xs-6 fotter_postnotes_II">
+                    <h5 class="footer_ttl_II">Community:</h5>
+                    <ul class="footer_socialz">
+                        <li><a href="#"><i class="fa fa-facebook-f"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery'z -->
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="slick-1.6.0/slick/slick.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script type="text/javascript">
+
+        $('#adult_count, #kids_count').select2({
+            width: '100%',
+            minimumResultsForSearch: -1
+        });
+
+    </script>
+    <script src="js/twf.js"></script>
+
+</div> <!-- Main END -->
+</body>
+</html>

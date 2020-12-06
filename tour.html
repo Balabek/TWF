@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Tokyo Walking Foodie Tours (TOUR)</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="slick-1.6.0/slick/slick.css" rel="stylesheet">
+    <link href="slick-1.6.0/slick/slick-theme.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/twf.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- QuickMessage™ Modal -->
+<div class="modal fade" id="quick_message_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog quick_message_smaller_dialog" role="document">
+        <div class="modal-content flat_green_content">
+            <div class="modal-header">
+                <button id="qm_modal_close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="quick_message_form" role="form" class="qm_form">
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="First Name" onfocus="placeholder='' " onblur="placeholder='First Name' ">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="Last Name" onfocus="placeholder='' " onblur="placeholder='Last Name' ">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="Your E-mail" onfocus="placeholder='' " onblur="placeholder='Your E-mail' ">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control qm_form_input" placeholder="Country" onfocus="placeholder='' " onblur="placeholder='Country' ">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control qm_form_txt_area" rows="8" placeholder="Message" onfocus="placeholder='' " onblur="placeholder='Message' "></textarea>
+                    </div>
+                    <button type="submit" id="send_quick_message" class="btn quick_message_btn center-block hvr-ripple-out ">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <nav class="navbar uppermost_nav">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-right uppermost_micronavbar">
+                <li><a class="anchor" href="index.html">Home</a></li>
+                <li><a class="anchor" href="faq.html">FAQ</a></li>
+                <li><a class="anchor" href="about.html">About Us</a></li>
+                <li><a class="anchor" href="blog.html">Blog</a></li>
+                <li><a class="anchor" data-toggle="modal" data-target="#quick_message_modal" href="javascript:void(0);">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <nav class="navbar main_hero_nav">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#twf_collapsable_01" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand twf_brand animated bounceInLeft" href="index.html"><img src="img/logo_main.png" class="twf_logo" alt="TWF Logo"> </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse lamp_navcollapse" id="twf_collapsable_01">
+                    <ul class="nav navbar-nav twf_main_nav navbar-right">
+                        <li><a class="anchor trans_cta_btn hvr-shadow" href="ourtours.html"><span class="main_nav_icon compass"></span>Our Tours</a></li>
+                        <li><a class="anchor trans_cta_btn hvr-shadow" href="#"><span class="main_nav_icon calendar"></span>Calendar</a></li>
+                        <li><a class="anchor trans_cta_btn hvr-shadow" href="testimonials.html"><span class="main_nav_icon testimonialz"></span>Testimonials</a></li>
+                        <div class="clearfix visible-sm hidden-xs"></div>
+                        <li><a class="anchor booknow_cta_btn" href="#">Book now!</a></li>
+                        <li><a class="anchor jpn_location_btn hvr-pulse" href="#"><span class="jpn_location"></span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <div class="tour_inner_header_stripe">
+        <div class="bg_pattern"></div>
+        <div class="container">
+            <div class="row">
+                <div class="h_banner_4_inner center-block">
+                    <h2 class="dedicated_product_header_ttl center-block">Tour Title Goes Here</h2>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Inner Header END -->
+    <hr class="mmline">
+
+    <div class="inner_midmain_area_tour">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 blog_left_sidebar_holder">
+                    <aside class="tour_a_side">
+                        <h4 class="bookthistournow_ttl"><u>Book this tour now!</u></h4>
+                        <p class="tour_mini_advice">
+                            Please not that we highly recommend advanced bookings, since the tours are usually sold out.
+                        </p>
+                        <hr class="tour_inner_separ">
+                        <h1 class="tour_price">¥8000 &ast;</h1>
+                        <small class="price_info"><span>*</span> - 50% off for the children under 12 years of age</small>
+                        <hr class="tour_inner_separ">
+                        <section class="participants_selector_holder">
+                            <span class="adults"></span>
+                            <small class="number_selector_info">Select the number of adults:</small>
+                            <section class="adult_selector_holder">
+                                <select id="adult_count">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </section>
+                            <div class="clearfix"></div>
+                            <span class="kidz"></span>
+                            <small class="number_selector_info">Select the number of children:</small>
+                            <section class="adult_selector_holder">
+                                <select id="kids_count">
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </section>
+                            <button type="submit" class="btn booknow_cta_xl_btn">Book now!</button>
+                        </section>
+                        <hr class="tour_inner_separ">
+                        <h4 class="general_info_ttl">Tour General Info</h4>
+                        <section class="tour_general_info_holder">
+                            <section class="piece_of_gi">
+                                <span class="gi tour_date_n_time"></span>
+                                <p class="gi_info">Mon - Fri, 3PM</p>
+                            </section>
+                            <section class="piece_of_gi">
+                                <span class="gi duration"></span>
+                                <p class="gi_info">Approx. 4 hours</p>
+                            </section>
+                            <section class="piece_of_gi">
+                                <span class="gi route"></span>
+                                <p class="gi_info">West exit of Ebisu station</p>
+                            </section>
+                            <section class="piece_of_gi">
+                                <span class="gi price"></span>
+                                <p class="gi_info">¥8000</p>
+                            </section>
+                            <section class="piece_of_gi">
+                                <span class="gi quantity"></span>
+                                <p class="gi_info">Up to 12 guests</p>
+                            </section>
+                            <section class="piece_of_gi">
+                                <span class="gi weather"></span>
+                                <p class="gi_info">Partly cloudy</p>
+                            </section>
+                            <section class="piece_of_gi">
+                                <span class="gi dresscode"></span>
+                                <p class="gi_info">Casual clothes</p>
+                            </section>
+                            <section class="piece_of_gi">
+                                <span class="gi food_2_taste"></span>
+                                <p class="gi_info">Food to taste:</p>
+                                <ul class="food_list">
+                                    <li>Makizushu</li>
+                                    <li>Yakitori</li>
+                                    <li>Ramen</li>
+                                    <li>Okonomiyaki</li>
+                                    <li>Oden</li>
+                                    <li>Kaiseki</li>
+                                </ul>
+                            </section>
+                        </section>
+                        <hr class="tour_inner_separ">
+                        <h4 class="general_info_ttl">You may also like</h4>
+                        <section class="youmayalsolike_holder">
+                            <div class="microtour_box" style="background:url('img/t4.jpg') center center no-repeat; background-size: cover;">
+                                <span class="micro_price_bullet">¥8000</span>
+                                <section class="transparent_info_board">
+                                    <h4>Morning Fish Market</h4>
+                                    <a href="#" class="btn youmayalsolike_learnore_btn">Learn more</a>
+                                </section>
+                            </div>
+                            <div class="microtour_box" style="background:url('img/t2.jpg') center center no-repeat; background-size: cover;">
+                                <span class="micro_price_bullet">¥5500</span>
+                                <section class="transparent_info_board">
+                                    <h4>Octopus Inferno in Kyoto</h4>
+                                    <a href="#" class="btn youmayalsolike_learnore_btn">Learn more</a>
+                                </section>
+                            </div>
+                            <section class="aside_see_all_tours_btn_holder center-block">
+                                <a href="#" class="btn aside_see_all_tours_btn center-block">See all tours</a>
+                            </section>
+                        </section>
+                    </aside>
+                </div> <!-- Tour Aside Holder END -->
+                <div class="col-md-8 col-sm-12 tour_midmain_holder">
+                    <section class="tour_description_holder">
+                        <h4>Tour title goes here</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, utinam munere antiopam vel ad. Qui eros iusto te. Nec ad
+                            feugiat honestatis. Quo illum detraxit an. Ius eius quodsi molestiae at, nostrum definitiones
+                            his cu. Discere referrentur mea id, an pri novum possim deterruisset.
+                            Eum oratio reprehendunt cu. Nec te quem assum postea. <br>
+                            Vix an dicat incorrupte. Epicuri mentitum eam ei, ad eum dictas discere, cum alia persius an.
+                            Usu cu saepe aperiam pericula, usu te eius posse feugiat, no dolore appareat mnesarchum sea.
+                            In duo verear qualisque definitiones!
+                            Cum ei bonorum admodum erroribus, ad dicam oporteat quo, mea ut graece vivendum. Falli
+                            graecis insolens ad mei. Mei no sanctus delectus verterem, audiam denique no his. No mei
+                            duis numquam ancillae, sea ei solet prompta debitis, his malis ridens aperiri ut. <br>
+                            Vidit brute ad pri, eu est munere persecuti, vix veniam melius definitionem ad. Ferri libris
+                            est ei, senserit complectitur sed ex. Errem eripuit neglegentur pro in, et mel ullum option
+                            insolens, modus nominavi et qui. Et alia putant adipiscing eum, at mel populo diceret nominati.
+                            Legere recusabo et eam, putant evertitur eos eu. Nec facete laoreet sensibus no, dicta iudico
+                            nominati ius ei, homero iracundia ad qui.
+                        </p>
+                    </section>
+                    <hr class="tour_inner_separ_lg">
+                    <div class="tour_slider_holder">
+                        <div class="tour_slider_show">
+                            <div style="background: url('img/tourslidepic_1.jpg') center center no-repeat; background-size: cover;"></div>
+                            <div style="background: url('img/tourslidepic_2.jpg') center center no-repeat; background-size: cover;"></div>
+                            <div style="background: url('img/tourslidepic_3.jpg') center center no-repeat; background-size: cover;"></div>
+                            <div style="background: url('img/tourslidepic_4.jpg') center center no-repeat; background-size: cover;"></div>
+                            <div style="background: url('img/tourslidepic_5.jpg') center center no-repeat; background-size: cover;"></div>
+                        </div>
+                        <div class="tour_slider_mini">
+                            <div style="background: url('img/tourslidepic_1.jpg') center center no-repeat; background-size: cover;"></div>
+                            <div style="background: url('img/tourslidepic_2.jpg') center center no-repeat; background-size: cover;"></div>
+                            <div style="background: url('img/tourslidepic_3.jpg') center center no-repeat; background-size: cover;"></div>
+                            <div style="background: url('img/tourslidepic_4.jpg') center center no-repeat; background-size: cover;"></div>
+                            <div style="background: url('img/tourslidepic_5.jpg') center center no-repeat; background-size: cover;"></div>
+                        </div>
+                    </div>
+                    <hr class="tour_inner_separ_lg">
+                    <section class="why_thi_tour_holder">
+                        <h4 class="why_this_ttl">Why choosing this tour?</h4>
+                        <p class="why_this_info">
+                            Vidit brute ad pri, eu est munere persecuti, vix veniam melius definitionem ad. Ferri libris
+                            est ei, senserit complectitur sed ex. Errem eripuit neglegentur pro in, et mel ullum option
+                            insolens:
+                        </p>
+                        <ul class="why_list">
+                            <li><span></span>Affordable pricing</li>
+                            <li><span></span>Ease of transportation</li>
+                            <li><span></span>Professional guidance from a local chef</li>
+                            <li><span></span>Unforgettable experience</li>
+                            <li><span></span>Money-back guarantee</li>
+                        </ul>
+                    </section>
+                    <div class="tour_map_holder">
+                        <h4 class="why_this_ttl">See your tour on the map</h4>
+                        <div class="tour_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.2116640696368!2d139.70754535047305!3d35.64715638010509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b4046e3f71d%3A0x85ab1d92ef294edf!2sEbisu+Station!5e0!3m2!1sen!2s!4v1479998763050" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="tour_testimonials_holder">
+                        <h4 class="why_this_ttl">Tour Testimonials</h4>
+                        <hr class="tour_inner_separ_lg">
+                        <div class="col-sm-4 testimobox">
+                            <span class="quotationsign"></span>
+                            <div class="col-sm-12 testimo_content">
+                                <p>
+                                    Wow!!! Spsum dolor sit amet, agam accusam assueverit ius id, vis te mucius latine
+                                    delenit, per causae scriptorem cu. Essent placerat liberavisse ut mea, natum
+                                    constituto usu ut, nam verear sanctus scribentur eu. Qui prodesset ullamcorper at,
+                                    diceret deleniti mediocrem ut eam, mei te delicata!
+                                </p>
+                            </div>
+                            <section class="testimo_author_details_holder">
+                                <span class="testimo_photo" style="background: url('img/testimoface1.jpg') center center no-repeat; background-size: cover;"></span>
+                                <h6 class="testimo_name">James Gordon</h6>
+                                <h6 class="testimo_country">Paris, FR</h6>
+                            </section>
+                        </div> <!-- Testimonial box END -->
+
+                        <div class="col-sm-4 testimobox">
+                            <span class="quotationsign"></span>
+                            <div class="col-sm-12 testimo_content">
+                                <p>
+                                    Unum possit inimicus eam an, ne nam natum consequat persequeris. An
+                                    quidam ornatus vivendum mel. Alia epicuri eligendi nam ut. Margancovken koxi rtrubi
+                                    mej, dagagh skrepner bereq tanem hetss super! I'll never forget the taste of the Fugu's
+                                    eyeball's slicky scent.
+                                </p>
+                            </div>
+                            <section class="testimo_author_details_holder">
+                                <span class="testimo_photo" style="background: url('img/testimoface_2.jpeg') center center no-repeat; background-size: cover;"></span>
+                                <h6 class="testimo_name">Monica Lacroix</h6>
+                                <h6 class="testimo_country">New York, US</h6>
+                            </section>
+                        </div> <!-- Testimonial box END -->
+
+                        <div class="col-sm-4 testimobox">
+                            <span class="quotationsign"></span>
+                            <div class="col-sm-12 testimo_content">
+                                <p>
+                                    Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem,
+                                    quia voluptas sit, aspernatur aut odit aut fnesciun!
+                                </p>
+                            </div>
+                            <section class="testimo_author_details_holder">
+                                <span class="testimo_photo" style="background: url('img/testimoface_3.jpeg') center center no-repeat; background-size: cover;"></span>
+                                <h6 class="testimo_name">Olga Morozova</h6>
+                                <h6 class="testimo_country">Magadan, RU</h6>
+                            </section>
+                        </div> <!-- Testimonial box END -->
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr class="tour_inner_separ_lg">
+                    <div class="faq_holder">
+                        <h4 class="faq_ttl">FAQ</h4>
+
+                        <section class="well srvc_infobox panel">
+                            <i class="ornament grey fa fa-caret-right"></i>
+                            <a class="toggle_srvc_box collapsed" data-toggle="collapse" data-target="#faq_001" data-text-original="" data-text-swap="">
+                            <span class="service_toggler_icon_box pull-right">
+                                <span class="chevdown"></span>
+                            </span>
+                                <h3 class="srvc_ttl">How do I pay for the tour?</h3>
+                                <div class="clearfix"></div>
+                                <p id="faq_001" class="panel-collapse collapse">
+                                    Per putant mollis apeirian in, id cum aliquam consequuntur. Mel soluta antiopam an,
+                                    in cum modo utamur expetendis. An purto salutatus ullamcorper sea. Vis id error
+                                    prodesset, modus tritani minimum mea ea. Munere populo complectitur usu et. Mea et
+                                    consul patrioque appellantur, habemus evertitur gloriatur ea nam. Atqui tamquam
+                                    deserunt nec an, duo persius tacimates an.
+                                </p>
+                            </a>
+                        </section>
+
+                        <section class="well srvc_infobox panel">
+                            <i class="ornament grey fa fa-caret-right"></i>
+                            <a class="toggle_srvc_box collapsed" data-toggle="collapse" data-target="#faq_002" data-text-original="" data-text-swap="">
+                            <span class="service_toggler_icon_box pull-right">
+                                <span class="chevdown"></span>
+                            </span>
+                                <h3 class="srvc_ttl">How do I pay for the tour?</h3>
+                                <div class="clearfix"></div>
+                                <p id="faq_002" class="panel-collapse collapse">
+                                    Lorem ipsum dolor sit amet, vel porro dolor vocent ei, case appareat usu ea. Cum
+                                    simul mnesarchum ut. Utinam ceteros hendrerit pri id. Cu eos suas urbanitas
+                                    repudiandae. Vix quot constituto ei, his ut cetero nostrud.
+                                    In ius prompta evertitur, ex eos nulla omnium omittantur. Et viris scribentur sit,
+                                    an mea equidem lucilius. Vix cu referrentur interpretaris, pro te everti melius.
+                                    Velit nostro nostrud te sea, te eum nostro accusam. Animal perfecto usu ea.
+                                </p>
+                            </a>
+                        </section>
+
+                        <section class="well srvc_infobox panel">
+                            <i class="ornament grey fa fa-caret-right"></i>
+                            <a class="toggle_srvc_box collapsed" data-toggle="collapse" data-target="#faq_003" data-text-original="" data-text-swap="">
+                            <span class="service_toggler_icon_box pull-right">
+                                <span class="chevdown"></span>
+                            </span>
+                                <h3 class="srvc_ttl">Should I be afraid of death after tasting Fugu?</h3>
+                                <div class="clearfix"></div>
+                                <p id="faq_003" class="panel-collapse collapse">
+                                    Lorem ipsum dolor sit amet, vel porro dolor vocent ei, case appareat usu ea. Cum
+                                    simul mnesarchum ut. Utinam ceteros hendrerit pri id. Cu eos suas urbanitas
+                                    repudiandae. Vix quot constituto ei, his ut cetero nostrud.
+                                    In ius prompta evertitur, ex eos nulla omnium omittantur. Et viris scribentur sit,
+                                    an mea equidem lucilius. Vix cu referrentur interpretaris, pro te everti melius.
+                                    Velit nostro nostrud te sea, te eum nostro accusam. Animal perfecto usu ea.
+                                    Vix quot constituto ei, his ut cetero nostrud. <br>
+                                    In ius prompta evertitur, ex eos nulla omnium omittantur. Et viris scribentur sit,
+                                    an mea equidem lucilius. Vix cu referrentur interpretaris, pro te everti melius.
+                                    Velit nostro nostrud te sea, te eum nostro accusam. Animal perfecto usu ea.
+                                </p>
+                            </a>
+                        </section>
+
+                        <section class="well srvc_infobox panel">
+                            <i class="ornament grey fa fa-caret-right"></i>
+                            <a class="toggle_srvc_box collapsed" data-toggle="collapse" data-target="#faq_004" data-text-original="" data-text-swap="">
+                            <span class="service_toggler_icon_box pull-right">
+                                <span class="chevdown"></span>
+                            </span>
+                                <h3 class="srvc_ttl">Can I take my children with me?</h3>
+                                <div class="clearfix"></div>
+                                <p id="faq_004" class="panel-collapse collapse">
+                                    Lorem ipsum dolor sit amet, vel porro dolor vocent ei, case appareat usu ea. Cum
+                                    simul mnesarchum ut. Utinam ceteros hendrerit pri id. Cu eos suas urbanitas
+                                    repudiandae. Vix quot constituto ei, his ut cetero nostrud.
+                                    In ius prompta evertitur, ex eos nulla omnium omittantur. Et viris scribentur sit,
+                                    an mea equidem lucilius. Vix cu referrentur interpretaris, pro te everti melius.
+                                    Velit nostro nostrud te sea, te eum nostro accusam. Animal perfecto usu ea.
+                                </p>
+                            </a>
+                        </section>
+
+                        <section class="well srvc_infobox panel">
+                            <i class="ornament grey fa fa-caret-right"></i>
+                            <a class="toggle_srvc_box collapsed" data-toggle="collapse" data-target="#faq_005" data-text-original="" data-text-swap="">
+                            <span class="service_toggler_icon_box pull-right">
+                                <span class="chevdown"></span>
+                            </span>
+                                <h3 class="srvc_ttl">What if I don't like the tour?</h3>
+                                <div class="clearfix"></div>
+                                <p id="faq_005" class="panel-collapse collapse">
+                                    Lorem ipsum dolor sit amet, vel porro dolor vocent ei, case appareat usu ea. Cum
+                                    simul mnesarchum ut. Utinam ceteros hendrerit pri id. Cu eos suas urbanitas
+                                    repudiandae. Vix quot constituto ei, his ut cetero nostrud.
+                                    In ius prompta evertitur, ex eos nulla omnium omittantur. Et viris scribentur sit,
+                                    an mea equidem lucilius. Vix cu referrentur interpretaris, pro te everti melius.
+                                    Velit nostro nostrud te sea, te eum nostro accusam. Animal perfecto usu ea.
+                                </p>
+                            </a>
+                        </section>
+
+                        <section class="well srvc_infobox panel">
+                            <i class="ornament grey fa fa-caret-right"></i>
+                            <a class="toggle_srvc_box collapsed" data-toggle="collapse" data-target="#faq_006" data-text-original="" data-text-swap="">
+                            <span class="service_toggler_icon_box pull-right">
+                                <span class="chevdown"></span>
+                            </span>
+                                <h3 class="srvc_ttl">Is there any customization option?</h3>
+                                <div class="clearfix"></div>
+                                <p id="faq_006" class="panel-collapse collapse">
+                                    Lorem ipsum dolor sit amet, vel porro dolor vocent ei, case appareat usu ea. Cum
+                                    simul mnesarchum ut. Utinam ceteros hendrerit pri id. Cu eos suas urbanitas
+                                    repudiandae. Vix quot constituto ei, his ut cetero nostrud.
+                                    In ius prompta evertitur, ex eos nulla omnium omittantur. Et viris scribentur sit,
+                                    an mea equidem lucilius. Vix cu referrentur interpretaris, pro te everti melius.
+                                    Velit nostro nostrud te sea, te eum nostro accusam. Animal perfecto usu ea.
+                                </p>
+                            </a>
+                        </section>
+
+                        <section class="well srvc_infobox panel">
+                            <i class="ornament grey fa fa-caret-right"></i>
+                            <a class="toggle_srvc_box collapsed" data-toggle="collapse" data-target="#faq_007" data-text-original="" data-text-swap="">
+                            <span class="service_toggler_icon_box pull-right">
+                                <span class="chevdown"></span>
+                            </span>
+                                <h3 class="srvc_ttl">My payment method failed, what can I do?</h3>
+                                <div class="clearfix"></div>
+                                <p id="faq_007" class="panel-collapse collapse">
+                                    Lorem ipsum dolor sit amet, vel porro dolor vocent ei, case appareat usu ea. Cum
+                                    simul mnesarchum ut. Utinam ceteros hendrerit pri id. Cu eos suas urbanitas
+                                    repudiandae. Vix quot constituto ei, his ut cetero nostrud.
+                                    In ius prompta evertitur, ex eos nulla omnium omittantur. Et viris scribentur sit,
+                                    an mea equidem lucilius. Vix cu referrentur interpretaris, pro te everti melius.
+                                    Velit nostro nostrud te sea, te eum nostro accusam. Animal perfecto usu ea.
+                                    Vix quot constituto ei, his ut cetero nostrud. <br>
+                                    In ius prompta evertitur, ex eos nulla omnium omittantur. Et viris scribentur sit,
+                                    an mea equidem lucilius. Vix cu referrentur interpretaris, pro te everti melius.
+                                    Velit nostro nostrud te sea, te eum nostro accusam. Animal perfecto usu ea.
+                                </p>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="signup_form_area">
+        <div class="container">
+            <div class="row">
+                <h2 class="guide_promo_ttl"><u>The Ultimate Guide For Foodies</u></h2>
+                <h3 class="guide_promo_ttl_2"><u>Get a <span>free</span> guide book for discovering real tokyo!</u></h3>
+                <h5 class="guide_promo_info"><u>In order to get secret local tips and a lot of other priceless information about Tokyo,
+                    <span>SIGN UP</span> below now!</u>
+                </h5>
+                <div class="col-sm-6 guide_book_holder">
+                    <div class="col-sm-12 guide_book_itself"></div>
+                </div>
+                <div class="col-sm-6 signup_form_holder">
+                    <img src="img/crooked_arrow_up.png" class="crooked_arrow_upper">
+                    <form id="signupForm" class="signup_form" role="form">
+                        <div class="form-group">
+                            <label for="signupFirstName"></label>
+                            <input type="text" class="form-control signup_input" id="signupFirstName" placeholder="First Name" onfocus="placeholder='' " onblur="placeholder='First Name' ">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupLastName"></label>
+                            <input type="text" class="form-control signup_input" id="signupLastName" placeholder="Last Name" onfocus="placeholder='' " onblur="placeholder='Last Name' ">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupEmail"></label>
+                            <input type="text" class="form-control signup_input" id="signupEmail" placeholder="E-mail Address" onfocus="placeholder='' " onblur="placeholder='E-mail Address' ">
+                        </div>
+                        <div class="form-group center-block">
+                            <button type="submit" class="btn center-block signup_sbmy_btn">Sign Up</button>
+                        </div>
+                    </form>
+                    <img src="img/crooked_arrow_down.png" class="crooked_arrow_lower">
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- Signup Form Area END -->
+
+    <div class="tokyoscape_area">
+        <div class="container">
+            <div class="row">
+                <img src="img/Tokyoscape.png" class="center-block tokyoscape_itself">
+            </div>
+        </div>
+    </div> <!-- Tokyoscape END -->
+
+    <footer class="twf_footer">
+        <div class="container">
+            <div class="row">
+                <section class="col-sm-2 first_linx_column">
+                    <ul class="footer_linxx">
+                        <li><i class="fa fa-circle"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa fa-circle"></i><a href="about.html">About us</a></li>
+                        <li><i class="fa fa-circle"></i><a href="faq.html">FAQ</a></li>
+                        <li><i class="fa fa-circle"></i><a href="blog.html">Blog</a></li>
+                        <li><i class="fa fa-circle"></i><a href="ourtours.html">Tours</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Book a tour</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-3 second_linx_column">
+                    <ul class="footer_linxx">
+                        <li><i class="fa fa-circle"></i><a href="#">Find restaurant</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Apply for free guide book</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Calendar</a></li>
+                        <li><i class="fa fa-circle"></i><a href="testimonials.html">Testimonials</a></li>
+                        <li><i class="fa fa-circle"></i><a href="privacy.html">Privacy Policy</a></li>
+                        <li><i class="fa fa-circle"></i><a href="#">Learn more about Japan</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-7 col-xs-5  address_column">
+                    <h5 class="footer_ttl">Contact us:</h5>
+                    <p class="contact_dtlz">+81-90-85886635</p>
+                    <p class="contact_dtlz"><u>info@tokyowalkingfoodietours.com</u></p>
+                    <hr class="invisible invisible_separ">
+                    <h5 class="footer_ttl">Address:</h5>
+                    <p class="contact_dtlz">203-2-18-6 Ebisuminami,</p>
+                    <p class="contact_dtlz">Shibuya, Tokyo 150-0022 JAPAN</p>
+                </section>
+                <div class="clearfix"></div>
+                <div class="col-sm-6 col-xs-6 fotter_postnotes">
+                    <small>&copy; 2017 All Rights Reserved, Tokyo Walking Foodie Tours</small>
+                </div>
+                <div class="col-sm-6 col-xs-6 fotter_postnotes_II">
+                    <h5 class="footer_ttl_II">Community:</h5>
+                    <ul class="footer_socialz">
+                        <li><a href="#"><i class="fa fa-facebook-f"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery'z -->
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="slick-1.6.0/slick/slick.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script type="text/javascript">
+
+        $('#adult_count, #kids_count').select2({
+            width: '100%',
+            minimumResultsForSearch: -1
+        });
+
+    </script>
+    <script src="js/twf.js"></script>
+
+</div> <!-- Main END -->
+</body>
+</html>

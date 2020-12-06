@@ -1,0 +1,803 @@
+/*
+░░ ░░ ░░ 　 ▒█▀▄▀█ ▒█▀▀█ 　 ░░ ░░ ░░
+▀▀ ▀▀ ▀▀ 　 ▒█▒█▒█ ▒█░▒█ 　 ▀▀ ▀▀ ▀▀
+░░ ░░ ░░ 　 ▒█░░▒█ ░▀▀█▄ 　 ░░ ░░ ░░
+*/
+
+/* !!!!!!!!! */
+/* •••••••••• !!!!! I M P O R T A N T !!!!! •••••••••• */
+/* !!!!!!!!! */
+
+@media screen and (max-width: 767px){
+    #twf_collapsable_01 {
+        background-color: rgba(255,255,255,0.99);
+        border-top: 3px solid #eb565c;
+        top: -46px;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        position: relative;
+        z-index: 8000;
+    }
+}
+
+
+
+
+
+/* ====== */
+/* ----------------- Quick Message ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 991px){
+    .modal-dialog.quick_message_smaller_dialog {width: 55%;}
+}
+
+@media screen and (max-width: 767px){
+    .modal-dialog.quick_message_smaller_dialog {width: 55%; margin: 0 auto; position: relative; top: 75px;}
+}
+
+@media screen and (max-width: 699px){
+    .modal-dialog.quick_message_smaller_dialog {width: 75%;}
+}
+
+@media screen and (max-width: 560px){
+    button.quick_message_btn {width: 50%;}
+}
+
+@media screen and (max-width: 460px){
+    button.quick_message_btn {width: 70%;}
+}
+
+@media screen and (max-width: 420px){
+    .modal-dialog.quick_message_smaller_dialog {width: 90%;}
+}
+
+
+
+
+/* ====== */
+/* ----------------- Navbars ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 1199px){
+    ul.twf_main_nav {margin-left: 11%; position: relative; left: 5%;}
+    .twf_logo {width: 19%; top: -45px;}
+
+    span.jpn_location {width: 100px; height: 38px; top: -7px;}
+    a.booknow_cta_btn {width: 12rem; font-size: 1.3rem;}
+    a.trans_cta_btn {width: 14rem; font-size: 1.3rem;}
+}
+
+@media screen and (max-width: 991px){
+    nav.main_hero_nav {height: 125px;}
+    ul.twf_main_nav {margin-top: -40px;}
+    a.trans_cta_btn {margin-bottom: 12px;}
+    .twf_logo {width: 25%;}
+}
+
+@media screen and (max-width: 767px){
+    ul.uppermost_micronavbar li a {float: left;}
+
+    nav.main_hero_nav {height: 55px;}
+    .twf_logo {width: 14%; top: -115px;}
+
+    .uppermost_micronavbar {position: relative; left: 53%;}
+
+    ul.twf_main_nav {left: initial; float: right; margin-top: 0;}
+    a.trans_cta_btn {margin-bottom: 20px;}
+    a.booknow_cta_btn {margin-bottom: 20px; width: 20rem; font-size: 1.5rem;}
+    a.trans_cta_btn {width: 20rem; font-size: 1.5rem;}
+}
+
+@media screen and (max-width: 720px){
+    .twf_logo {width: 16%;}
+    .uppermost_micronavbar {left: 45%;}
+}
+
+@media screen and (max-width: 620px){
+    .twf_logo {width: 17%;}
+    .uppermost_micronavbar {left: 42%;}
+}
+
+@media screen and (max-width: 590px){
+    .twf_logo {width: 18%;}
+    .uppermost_micronavbar {left: 38%;}
+}
+
+@media screen and (max-width: 545px){
+    .twf_logo {width: 20%;}
+    .uppermost_micronavbar {left: 35%;}
+}
+
+@media screen and (max-width: 524px){
+    #twf_collapsable_01 {top: 4px;}
+
+    .twf_logo {width: 10rem; top: -65px}
+    .uppermost_micronavbar {left: 31%;}
+}
+
+@media screen and (max-width: 495px){
+    .navbar-toggle {margin-top: 30px;}
+    #twf_collapsable_01 {top: 26px;}
+
+    nav.main_hero_nav {height: 100px;}
+    .twf_logo {top: -15px}
+
+    .uppermost_micronavbar {left: 15%;}
+}
+
+@media screen and (max-width: 435px){
+    .uppermost_micronavbar {left: 10%;}
+    #twf_collapsable_01 {top: 27px;}
+}
+
+@media screen and (max-width: 386px){
+    .uppermost_micronavbar {left: 5%;}
+}
+
+@media screen and (max-width: 365px){
+    .uppermost_micronavbar {left: 1%;}
+}
+
+@media screen and (max-width: 359px){
+    .uppermost_micronavbar {left: 1%;}
+    ul.uppermost_micronavbar li a {font-size: 1.1rem;}
+}
+
+@media screen and (max-width: 340px){
+    ul.uppermost_micronavbar li a {font-size: 1rem;}
+}
+
+@media screen and (max-width: 325px){
+    ul.uppermost_micronavbar li a {font-size: 0.899rem;}
+}
+
+
+
+
+
+/* ====== */
+/* ----------------- Header ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 1111px){
+    a.tfw_main_cta_btn {width: 50%;}
+}
+
+@media screen and (max-width: 970px){
+    .h_banner h1 {font-size: 3rem;}
+    .h_banner h4 {font-size: 2rem;}
+}
+
+@media screen and (max-width: 888px){
+    img.header_pic {height: 700px; width: auto;}
+}
+
+@media screen and (max-width: 800px){
+    a.tfw_main_cta_btn {width: 60%; margin-top: 14%;}
+}
+
+@media screen and (max-width: 680px){
+    a.tfw_main_cta_btn {width: 70%; font-size: 1.7rem; height: 52px;}
+    .h_banner {width: 70%;}
+}
+
+@media screen and (max-width: 595px){
+    .h_banner {width: 85%;}
+}
+
+@media screen and (max-width: 425px){
+    .h_banner {width: 95%;}
+}
+
+
+
+
+
+/* ====== */
+/* ----------------- Choose Tour ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 1199px){
+    span.daytime {width: 24px; height: 24px; margin-top: 5px;}
+    p.tour_exact_time_range {font-size: 1.2rem; line-height: 3;}
+
+    span.address {width: 24px; height: 24px; margin-top: 5px;}
+    p.tour_exact_address {font-size: 1.3rem; line-height: 2.7;}
+
+    h3.wid_tour_ttl {font-size: 2.4rem;}
+}
+
+@media screen and (max-width: 620px){
+    h3.wid_tour_ttl {font-size: 2rem;}
+    h1.four_widgets_area_ttl {font-size: 2.6rem;}
+}
+
+@media screen and (max-width: 555px){
+    span.price_tag_bullet {width: 8rem; padding-top: 8px; font-size: 1.6rem; margin-top: 7px;}
+}
+
+@media screen and (max-width: 500px){
+    .main_widget {padding-bottom: 70px; height: auto; min-height: 385px;}
+    .address_holder {float: left !important; clear: both; padding-left: 0;}
+
+    .time_tange_and_daytime_holder {width: 100%;}
+}
+
+@media screen and (max-width: 425px){
+    h3.wid_tour_ttl {
+        display: inline-block;
+        font-size: 1.7rem;
+        /*width: 250px;*/
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+
+
+
+
+/* ====== */
+/* ----------------- Why Book? ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 1199px){
+    .why_crcl {width: 195px; height: 195px;}
+}
+
+@media screen and (max-width: 991px){
+    .why_crcl {position: relative; right: -30%;}
+    .why_circle_holder {margin-bottom: 30px;}
+
+    .bordered.two_sm {border-right: none;}
+}
+
+@media screen and (max-width: 741px){
+    h1.why_twf_ttl {font-size: 2.3rem;}
+}
+
+@media screen and (max-width: 645px){
+    .why_crcl {position: relative; right: -20%;}
+}
+
+@media screen and (max-width: 585px){
+    .why_crcl {position: relative; right: -10%;}
+}
+
+@media screen and (max-width: 535px){
+    h1.why_twf_ttl {font-size: 1.8rem;}
+    .why_crcl {position: relative; right: -4%;}
+}
+
+@media screen and (max-width: 480px){
+    .why_crcl {width: 135px; height: 135px; right: -17%;}
+    h4.why_crcl_ttl {font-size: 1.7rem;}
+}
+
+@media screen and (max-width: 410px){
+    .why_circle_holder {width: 100%;}
+
+    .why_crcl {width: 235px; height: 235px; right: -25%;}
+    p.why_crcl_dtlz {height: 120px;}
+    h4.why_crcl_ttl {font-size: 2.1rem;}
+}
+
+@media screen and (max-width: 377px){
+    .why_crcl {right: -19%;}
+}
+
+@media screen and (max-width: 345px){
+    .why_crcl {right: -11%;}
+}
+
+@media screen and (max-width: 325px){
+    .why_crcl {right: -10%;}
+}
+
+
+
+
+/* ====== */
+/* ----------------- Free Guide Book Sign Up? ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 1199px){
+    img.crooked_arrow_upper {left: 38%;}
+
+    .guide_book_itself {height: 500px;}
+}
+
+@media screen and (max-width: 991px){
+    .guide_book_itself {height: 365px;}
+
+    button.signup_sbmy_btn {right: 0; margin-top: 30px; width: 55%;}
+    input.signup_input {width: 98%; margin-bottom: 0;}
+
+    img.crooked_arrow_lower {bottom: -26px; left: -38%;}
+
+    h5.guide_promo_info {width: 100%;}
+    h3.guide_promo_ttl_2 {line-height: 1.5;}
+}
+
+@media screen and (max-width: 767px){
+    img.crooked_arrow_lower {display: none;}
+    .guide_book_holder {padding-top: 16px;}
+    .guide_book_itself {height: 754px;}
+}
+
+@media screen and (max-width: 658px){
+    .guide_book_itself {height: 658px;}
+}
+
+@media screen and (max-width: 603px){
+    h3.guide_promo_ttl_2 {padding-left: 12px; padding-right: 12px;}
+    h5.guide_promo_info {padding-left: 12px; padding-right: 12px; font-size: 1.6rem;}
+}
+
+@media screen and (max-width: 586px){
+    .guide_book_itself {height: 565px;}
+}
+
+@media screen and (max-width: 544px){
+    h2.guide_promo_ttl {font-size: 3.2rem;}
+    h3.guide_promo_ttl_2 {font-size: 2.5rem;}
+}
+
+@media screen and (max-width: 515px){
+    .guide_book_itself {height: 499px;}
+}
+
+@media screen and (max-width: 544px){
+    h2.guide_promo_ttl {font-size: 2.8rem; line-height: 1.4;}
+    h3.guide_promo_ttl_2 {font-size: 2.1rem;}
+}
+
+@media screen and (max-width: 460px){
+    .signup_form_area {padding-top: 14px;}
+    .guide_book_itself {height: 429px;}
+}
+
+@media screen and (max-width: 422px){
+    h2.guide_promo_ttl {font-size: 2.5rem;}
+    .guide_book_itself {height: 400px;}
+}
+
+@media screen and (max-width: 380px){
+    .guide_book_itself {height: 363px;}
+}
+
+@media screen and (max-width: 337px){
+    .guide_book_itself {height: 325px;}
+
+    img.crooked_arrow_upper {width: 40%; top: 0;}
+}
+
+
+
+
+/* ====== */
+/* ----------------- Tokyoscape + Footer ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 991px){
+    ul.footer_linxx li a {font-size: 1rem;}
+    ul.footer_linxx li i {top: 0;}
+
+    h5.footer_ttl {font-size: 1.2rem;}
+}
+
+@media screen and (max-width: 767px){
+    .address_column {margin-top: 20px;}
+    h5.footer_ttl {text-align: left;}
+    p.contact_dtlz {text-align: left;}
+}
+
+@media screen and (max-width: 680px){
+    .fotter_postnotes {width: 100%; text-align: left; padding-top: 38px;}
+    .fotter_postnotes_II {width: 100%; text-align: center; padding-top: 10px;}
+    h5.footer_ttl_II {display: none;}
+    ul.footer_socialz {float: left; padding-left: 0; left: 0;}
+
+    img.tokyoscape_itself {width: 80%;}
+}
+
+@media screen and (max-width: 575px){
+    img.tokyoscape_itself {width: 90%;}
+}
+
+@media screen and (max-width: 475px){
+    img.tokyoscape_itself {width: 100%;}
+}
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+
+
+/* ====== */
+/* ----------------- BLOG (Inner) ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 1199px){
+    .blog_user_holder {width: 28%;}
+    .blog_date_holder {width: 30%;}
+
+    a.youmayalsolike_learnore_btn {width: 55%;}
+}
+
+@media screen and (max-width: 991px){
+    .h_banner_4_inner {margin-top: 20%;}
+    .blog_a_side {margin-bottom: 70px;}
+
+    a.aside_see_all_tours_btn {width: 35%;}
+    a.youmayalsolike_learnore_btn {width: 50%;}
+
+    button.signup_sbmy_aside_btn {width: 36%;}
+
+    .microtour_box {width: 45%; margin-left: 25px;}
+}
+
+@media screen and (max-width: 910px){
+    .product_inner_header_stripe:before {background-position: 0 -200px;}
+}
+
+@media screen and (max-width: 767px){
+    .h_banner_4_inner {margin-top: 15%;}
+}
+
+@media screen and (max-width: 720px){
+    .product_inner_header_stripe:before {background-position: 0 -100px;}
+}
+
+@media screen and (max-width: 635px){
+    .blog_filter_stripe {height: 95px;}
+    .photo_checkbox_holder {float: left; clear: both;}
+
+    .blog_user_holder {display: block; clear: both; margin-bottom: 6px;}
+    .blog_date_holder {display: block; clear: both; margin-bottom: 6px;}
+}
+
+@media screen and (max-width: 599px){
+    .h_banner_4_inner {margin-top: 20%;}
+    .product_inner_header_stripe:before {background-position: 0 -10px;}
+
+    .microtour_box {width: 100%; margin-left: initial;}
+    .photo_checkbox_holder {width: 65%;}
+
+    .blog_user_holder {width: 99%;}
+    .blog_date_holder {width: 99%;}
+}
+
+@media screen and (max-width: 499px){
+    .blog_filter_stripe {min-height: 50px; height: auto;}
+    h6.filter_ttl {margin-bottom: 16px;}
+    .year_selektor_holder {display: block; clear: both; float: none; width: 97%;}
+    .month_selektor_holder {display: block; clear: both; float: none; width: 97%;}
+    .category_selektor_holder {display: block; clear: both; float: none; width: 97%;}
+
+    a.aside_see_all_tours_btn {width: 50%;}
+    button.signup_sbmy_aside_btn {width: 50%;}
+}
+
+@media screen and (max-width: 495px){
+    .h_banner_4_inner {margin-top: 10em;}
+}
+
+@media screen and (max-width: 475px){
+    .blogpic {height: 220px;}
+}
+
+@media screen and (max-width: 430px){
+    .product_inner_header_stripe:before {background-position: 0 0;}
+}
+
+@media screen and (max-width: 376px){
+    button.signup_sbmy_aside_btn {width: 70%;}
+    a.aside_see_all_tours_btn {width: 70%;}
+}
+
+
+
+
+
+
+
+/* ====== */
+/* ----------------- TOUR (Inner) ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 1199px){
+    .testimo_content p {min-height: 235px;}
+}
+
+@media screen and (max-width: 991px){
+    .testimo_content p {min-height: 200px;}
+    .tour_a_side {margin-bottom: 55px;}
+
+    button.booknow_cta_xl_btn {width: 50%; margin-top: 65px;}
+}
+
+@media screen and (max-width: 767px){
+    .testimo_content p {min-height: 60px;}
+    .testimobox {margin-bottom: 55px;}
+}
+
+@media screen and (max-width: 666px){
+    button.booknow_cta_xl_btn {width: 100%; margin-top: 16px;}
+}
+
+@media screen and (max-width: 603px){
+    .tour_slider_mini {padding-left: 4px; padding-right: 4px;}
+}
+
+@media screen and (max-width: 470px){
+    h3.srvc_ttl {font-size: 1.4rem;}
+    h4.why_this_ttl {font-size: 2.1rem;}
+    h4.faq_ttl {font-size: 2.1rem;}
+    .tour_description_holder h4 {font-size: 2.1rem;}
+
+    ul.why_list li {font-size: 1.6rem;}
+    ul.why_list li span {top: 7px;}
+
+    .tour_slider_holder {padding-top: 0;}
+    .tour_slider_show {display: none;}
+    .tour_slider_mini div {height: 260px; width: 100%;}
+    .tour_slider_mini div {margin-right: 18px; position: relative; right: -5px;}
+}
+
+@media screen and (max-width: 414px){
+    h3.srvc_ttl {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 288px;
+    }
+}
+
+@media screen and (max-width: 395px){
+    h3.srvc_ttl {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 368px){
+    h3.srvc_ttl {
+        width: 245px;
+    }
+
+    .tour_slider_mini div {height: 200px;}
+}
+
+@media screen and (max-width: 347px){
+    h3.srvc_ttl {
+        width: 225px;
+    }
+}
+
+@media screen and (max-width: 329px){
+    h3.srvc_ttl {
+        width: 205px;
+    }
+}
+
+
+
+
+
+/* ====== */
+/* ----------------- Mail Magazine (Inner) ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 1170px){
+    .mm_option h3 {font-size: 1.7rem;}
+    .five_options_holder {padding-left: 90px;}
+}
+
+@media screen and (max-width: 1060px){
+    .mm_option h3 {padding-left: 8px; padding-right: 8px;}
+}
+
+@media screen and (max-width: 960px){
+    .five_options_holder {padding-left: 50px;}
+}
+
+@media screen and (max-width: 870px){
+    span.mm_icon {width: 80px;}
+    .mm_option {margin-right: 5px; width: 19%;}
+    .five_options_holder {padding-left: 30px;}
+}
+
+@media screen and (max-width: 685px){
+    .five_options_holder {padding-right: 100px; padding-left: 100px;}
+    .mm_option {width: 100%; margin-right: 0; margin-bottom: 20px;}
+
+    .mm_option h3 {font-size: 2.7rem;}
+    span.mm_icon {width: 200px; height: 120px;}
+
+    .signup_form_area_mm {position: relative; clear: both;}
+    .five_options_holder {height: initial;}
+}
+
+@media screen and (max-width: 625px){
+    .mm_midmain_area h4 {font-size: 2.1rem;}
+}
+
+@media screen and (max-width: 525px){
+    .mm_option h3 {font-size: 2.1rem;}
+}
+
+@media screen and (max-width: 480px){
+    .five_options_holder {padding-right: 40px; padding-left: 40px;}
+    .mm_midmain_area h4 {line-height: 1.7; padding-left: 12px; padding-right: 12px;}
+}
+
+@media screen and (max-width: 380px){
+    .five_options_holder {padding-right: 20px; padding-left: 20px;}
+    .signup_form_area_mm {padding-top: 0;}
+}
+
+@media screen and (max-width: 330px){
+    .five_options_holder {padding-right: 8px; padding-left: 8px;}
+}
+
+
+
+
+
+/* ====== */
+/* ----------------- FAQ (Inner) ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 1199px){
+    p.faq_details {width: 80%;}
+}
+
+@media screen and (max-width: 991px){
+    p.faq_details {width: 90%;}
+    .faq_holder {width: 90%;}
+}
+
+@media screen and (max-width: 475px){
+    .faq_holder {width: 98%;}
+    h2.faq_ttl {font-size: 2.1rem;}
+    p.faq_details {font-size: 1.5rem;}
+}
+
+
+
+
+
+
+/* ====== */
+/* ----------------- Privacy Policy ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 767px){
+    .privacy_midmain_area {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+
+
+
+
+
+
+
+/* ====== */
+/* ----------------- Privacy Policy ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 767px){
+    .about_midmain_area {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+
+
+
+
+
+
+
+/* ====== */
+/* ----------------- Testimonials ---------------- */
+/* ====== */
+
+/* >>> LG <<< */
+
+
+/* >>> SM & XS <<< */
+@media screen and (max-width: 991px){
+    .testimobox_2 {margin-bottom: 65px;}
+    .testimo_content_2 p {min-height: 120px;}
+}
+
+@media screen and (max-width: 767px){
+    .testimo_midmain_area {padding-left: 24px; padding-right: 24px;}
+    .testimo_content_2 p {min-height: 70px;}
+}
+
+@media screen and (max-width: 475px){
+    h3.testimo_ttl {font-size: 2.1rem;}
+}
+
+
+
+
+
+
+
+
